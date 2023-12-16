@@ -248,6 +248,8 @@ body.active { overflow: hidden; }
   border-radius: var(--radius-pill);
 }
 
+.has-scrollbar::-webkit-scrollbar-button {width: 10px; }
+
 .has-scrollbar:is(:hover, :focus-within)::-webkit-scrollbar-thumb {
   background-color: var(--light-gray-1); 
 }
@@ -263,7 +265,62 @@ body.active { overflow: hidden; }
   margin-block-end: 15px;
 }
 
+.avatar-list {
+  display: flex;
+  flex-direction: row-reverse;
+}
 
+.avatar-list.absolute {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+
+.avatar-item:not(:first-child) {margin-inline-end: -15px; }
+
+.avatar {
+  width: 40px;
+  border-radius: var(--radius-circle);
+  background: none;
+  border: 5px solid var(--white_20);
+  transition: var(--transition-1);
+  will-change: transform;
+}
+
+.avatar-list.absolute .avatar:is(:hover, :focus) {
+  transform: scale(0.9);
+  border-color: var(--white);
+}
+
+.card-meta-list {
+  display: flex;
+  gap: 5px;
+}
+
+.card-tag {
+  background-color: var(--cultured);
+  font-size: var(--fs-9);
+  font-weight: var(--fw-500);
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  transition: var(--transition-1);
+}
+
+.card-tag:is(:hover, :focus) {background-color: var(--gainsboro); }
+
+.blog-card .card-title {
+  margin-block: 8px 12px;
+  text-decoration-thickness: 2px;
+}
+
+.blog-card .card-text {
+  font-size: var(--fs-8);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding-inline-end: 20px;
+}
 
 /*-----------------------------------*\
   #HEADER

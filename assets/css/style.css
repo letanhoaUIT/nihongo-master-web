@@ -322,6 +322,13 @@ body.active { overflow: hidden; }
   padding-inline-end: 20px;
 }
 
+.grid-list {
+  display: grid;
+  gap: 30px;
+}
+
+
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -473,9 +480,18 @@ body.active { overflow: hidden; }
   #RECENT POST
 \*-----------------------------------*/
 
+.top-author { display: none; }
 
+.recent { padding-block-start: 15px; }
 
+.recent .section-title .strong { display: block; }
 
+.recent .search-title { margin-block-end: 20px; }
+
+.recent .btn {
+  margin-inline: auto;
+  margin-block: 50px 30px;
+}
 
 /*-----------------------------------*\
   #RECOMMENDED POST

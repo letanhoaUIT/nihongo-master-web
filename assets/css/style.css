@@ -191,7 +191,7 @@ body.active { overflow: hidden; }
 
 .newsletter-form .email-field:focus { background-color: var(--gainsboro); }
 
-.newsletter-form .email-field::placeholder { color: var(--eerie-black); }
+.newsletter-form .email-field::placeholder { color: var(--eerie-black_60); }
 
 .newsletter-form .btn {
   position: absolute;

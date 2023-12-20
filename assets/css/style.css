@@ -510,7 +510,9 @@ body.active { overflow: hidden; }
   #NEWSLETTER
 \*-----------------------------------*/
 
+.newsletter { padding-block-start: 40px; }
 
+.newsletter .section-title { margin-block-end: 25px; }
 
 
 
